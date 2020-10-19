@@ -1,0 +1,12 @@
+{
+  "name": "basic-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juan Jose Vega <juanjosevegaquintero@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^26.6.0",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^26.6.0"
+  }
+}
