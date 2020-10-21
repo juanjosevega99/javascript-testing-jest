@@ -7,12 +7,16 @@ describe("Common Comparators", () => {
     name: "Juan",
     lastName: "Vega",
   };
+  const user3 = {
+    name: "Camilla",
+    lastName: "Queen",
+  };
 
   test("equality of elements", () => {
     expect(user).toEqual(user2);
   });
 
   test("element inequality", () => {
-    expect(user).not.toEqual(user2);
+    expect(user).not.toEqual(user3);
   });
 });
