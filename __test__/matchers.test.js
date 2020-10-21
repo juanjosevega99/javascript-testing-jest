@@ -11,4 +11,8 @@ describe("Common Comparators", () => {
   test("equality of elements", () => {
     expect(user).toEqual(user2);
   });
+
+  test("element inequality", () => {
+    expect(user).not.toEqual(user2);
+  });
 });
