@@ -10,4 +10,7 @@ describe("check that an element exists", () => {
   test("check the size of an array", () => {
     expect(arrayFruits()).toHaveLength(4);
   });
+  test("check that there is a color", () => {
+    expect(arrayColors()).toContain("blue");
+  });
 });
