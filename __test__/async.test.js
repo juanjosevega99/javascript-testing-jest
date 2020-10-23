@@ -14,5 +14,10 @@ describe("Test Async/Await", () => {
       expect(data.name).toEqual("Rick Sanchez");
     });
 
+    const data = await getDataFromApi(api);
+    expect(data.results.length).toBeGreaterThanOrEqual(0);
+
+    const data2 = await getDataFromApi(getRick);
+    expect(data2.name).toEqual("Rick Sanchez");
   });
 });
