@@ -8,4 +8,16 @@ describe("Test promises", () => {
       done();
     });
   });
+
+  test("Resolve Hi", () => {
+    return expect(Promise.resolve("Hi")).resolves.toBe("Hi");
+  });
+
+  test("Reject with an error", () => {
+    return expect(Promise.reject("Error")).rejects.toBe("Error");
+  });
+
+  test("Reject with an error / second way", () => {
+    return expect(Promise.reject(new Error("Error"))).rejects.toThrow("Error");
+  });
 });
