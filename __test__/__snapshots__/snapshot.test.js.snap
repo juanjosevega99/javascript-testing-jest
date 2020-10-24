@@ -9,3 +9,19 @@ Object {
   "status": "Alive",
 }
 `;
+
+exports[`it is time for snapshots fail snapshot 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "headline": "Full Stack Developer",
+  "id": Any<Number>,
+  "name": "Juan Jose Vega",
+}
+`;
+
+exports[`it is time for snapshots we have an exception 1`] = `
+Object {
+  "id": Any<Number>,
+  "name": "Juan Jose Vega",
+}
+`;
